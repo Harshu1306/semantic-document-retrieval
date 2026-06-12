@@ -4,6 +4,21 @@ A basic **RAG (Retrieval-Augmented Generation)** application that lets you uploa
 
 ---
 
+## 🌐 Live Demo
+
+**Try it here:** [https://semantic-document-ui.onrender.com/](https://semantic-document-ui.onrender.com/)
+
+> ⚠️ **Note:** The app is hosted on Render's free tier. If it hasn't been used recently, the server may take **30–60 seconds to wake up** on your first request — this is normal. Once loaded, it works at full speed.
+
+**What you can do on the live demo:**
+- Upload a PDF, DOCX, TXT, or PPTX file
+- Ask natural language questions about your document
+- Get answers grounded in the actual document content, with source references
+- Summarize documents in one click
+- Delete documents when you're done
+
+---
+
 ## 🧩 Problem Statement
 
 Reading through large documents to find specific information is slow and inefficient. Traditional keyword search misses relevant content when you use different wording than what's in the document.
@@ -225,4 +240,3 @@ Frontend runs at `http://localhost:3000`
 Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change.
 
 ---
-
