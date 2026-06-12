@@ -39,9 +39,14 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# Configured to allow local development ports and your live deployed Render frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://semantic-document-ui.onrender.com"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
