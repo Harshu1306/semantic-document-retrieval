@@ -1,9 +1,10 @@
 import axios from 'axios'
 
-// Use the production Render URL if live, otherwise fallback to local backend
-const BACKEND_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://smartdoc-retrieval.onrender.com' 
-  : 'http://127.0.0.1:8000';
+// 1. Vite uses import.meta.env.PROD to check for production mode
+// 2. Appended /api to match your FastAPI router prefixes
+const BACKEND_URL = import.meta.env.PROD 
+  ? 'https://smartdoc-retrieval.onrender.com/api' 
+  : 'http://127.0.0.1:8000/api';
 
 const api = axios.create({
   baseURL: BACKEND_URL,
