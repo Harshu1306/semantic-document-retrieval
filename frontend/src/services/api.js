@@ -1,7 +1,12 @@
 import axios from 'axios'
 
+// Use the production Render URL if live, otherwise fallback to local backend
+const BACKEND_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://smartdoc-retrieval.onrender.com' 
+  : 'http://127.0.0.1:8000';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: BACKEND_URL,
   timeout: 120_000,
 })
 
