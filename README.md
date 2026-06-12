@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DocuLingua — Multilingual Document QA System
 
 > Upload documents in any language, ask questions in any language, get answers in your language.
@@ -171,3 +172,6 @@ Maximum file size: **50 MB** (configurable via `MAX_FILE_SIZE_MB` env var)
 | `CHROMA_PATH` | `./chroma_store` | Where ChromaDB persists data |
 | `UPLOAD_DIR` | `./uploads` | Where uploaded files are saved |
 | `MAX_FILE_SIZE_MB` | `50` | Maximum upload size |
+=======
+# semantic-document-retrieval
+>>>>>>> 9c4543889510fcebfbf52fcb14ffb8374dec2270
