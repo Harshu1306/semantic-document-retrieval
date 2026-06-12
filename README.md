@@ -226,6 +226,3 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 ---
 
-## 📄 License
-
-This project is open source. See [LICENSE](LICENSE) for details.
