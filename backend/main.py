@@ -29,8 +29,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Multilingual RAG API",
-    description="Upload documents and ask questions in any language.",
+    title="RAG API",
+    description="Upload documents and ask questions",
     version="1.0.0",
     lifespan=lifespan,
 )
