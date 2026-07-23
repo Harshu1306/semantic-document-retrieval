@@ -55,4 +55,4 @@ app.include_router(documents_router, prefix="/api", tags=["Documents"])
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "service": "Multilingual RAG API"}
+    return {"status": "ok", "service": "RAG API"}
