@@ -1,7 +1,3 @@
-"""
-GET    /api/documents        — list all indexed documents
-DELETE /api/documents/{id}   — remove a document and its vectors
-"""
 import logging
 import os
 from typing import List
