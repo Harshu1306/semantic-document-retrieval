@@ -1,8 +1,3 @@
-"""
-RAG answer-generation chain using Gemini 2.5 Flash.
-Basic English-only document QA system.
-"""
-
 import logging
 import os
 from typing import List, Optional
