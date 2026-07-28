@@ -11,7 +11,7 @@ def retrieve_chunks(
     query: str,
     top_k: int = 5,
     document_ids: Optional[List[str]] = None,
-    collection_name: str = "multilingual_rag",
+    collection_name: str = "rag",
 ) -> List[dict]:
     query_vector = embed_query(query)
     collection   = get_or_create_collection(collection_name)
