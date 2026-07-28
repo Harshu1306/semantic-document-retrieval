@@ -1,7 +1,3 @@
-"""
-Semantic retriever — fetches the top-k most relevant chunks
-from ChromaDB for a given query, with optional document filter.
-"""
 import logging
 from typing import List, Optional
 
@@ -17,18 +13,6 @@ def retrieve_chunks(
     document_ids: Optional[List[str]] = None,
     collection_name: str = "multilingual_rag",
 ) -> List[dict]:
-    """
-    Retrieve the top-k relevant chunks for a query.
-
-    Args:
-        query:        The user's question.
-        top_k:        Number of chunks to return.
-        document_ids: Optional list of document IDs to restrict the search.
-        collection_name: ChromaDB collection.
-
-    Returns:
-        List of dicts with keys: text, metadata, distance, score.
-    """
     query_vector = embed_query(query)
     collection   = get_or_create_collection(collection_name)
 
