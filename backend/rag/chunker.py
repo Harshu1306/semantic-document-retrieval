@@ -1,6 +1,3 @@
-"""
-Text chunking — splits LangChain Documents into smaller chunks.
-"""
 import logging
 from typing import List
 
@@ -18,10 +15,6 @@ def chunk_documents(
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     chunk_overlap: int = DEFAULT_CHUNK_OVERLAP,
 ) -> List[Document]:
-    """
-    Split a list of Documents into overlapping text chunks.
-    Preserves original metadata and adds chunk_index.
-    """
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
