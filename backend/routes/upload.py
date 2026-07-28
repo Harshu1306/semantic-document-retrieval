@@ -35,10 +35,6 @@ class UploadResponse(BaseModel):
 
 @router.post("/upload", response_model=UploadResponse)
 async def upload_document(file: UploadFile = File(...)):
-    """
-    Upload a document (PDF / DOCX / TXT / PPTX).
-    Extract text, chunk it, generate embeddings, and store in ChromaDB.
-    """
 
     ext = Path(file.filename).suffix.lower()
 
