@@ -1,8 +1,3 @@
-"""
-Embedding generation using Google Gemini Embeddings
-and storage in ChromaDB.
-"""
-
 import hashlib
 import logging
 import os
@@ -43,15 +38,8 @@ def embed_and_store(
     document_id: str,
     filename: str,
     language: str,
-    collection_name: str = "multilingual_rag",
+    collection_name: str = "rag",
 ) -> int:
-    """
-    Generate embeddings for document chunks and store them in ChromaDB.
-
-    Returns:
-        Number of chunks stored.
-    """
-
     if not chunks:
         logger.warning("No chunks found for document %s", document_id)
         return 0
